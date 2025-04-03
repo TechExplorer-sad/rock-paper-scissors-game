@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin: 0px; */
+  overflow: hidden;
+}
+
+div {
+  margin-bottom: 55px;
+}
+
+.main{
+  background-image: url(img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.option {
+  position: absolute;
+  top: 10em;
+  left: 16em;
+}
+
+.option img{
+  width: 250px;
+  height: 200px;
+  margin: 0 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.option img:hover{
+  transform: scale(1.1);
+}
+
+
+.css-class-result,
+.css-class-move,
+.css-class-score{
+  position: absolute;
+  color: aliceblue;
+  font-weight: 800;
+ 
+}
+
+.css-class-result{
+  top: 7.4em;
+  left: 11.7em;
+  font-size: 55px;
+}
+
+.css-class-move{
+  top: 15.5em;
+  left: 13.2em;
+  font-size: 35px;
+}
+
+.css-class-score{
+  top: 25em;
+  left: 25.5em;
+  font-size: 25px;
+}
+
+
+.css-class-reset{
+  position: absolute;
+  top: 28em;
+  left: 32.3em;
+  width: 160px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  height: 50px;
+  background: #5e3528;
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+}
+
+.css-class-reset:hover{
+  transform: scale(1.1);
+}
+
+.css-class-final{
+  background: lightseagreen;
+  position: absolute;
+  top: 28em;
+  left: 24em;
+  width: 160px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.css-class-final:hover{
+  transform: scale(1.1);
+}
+
+/* game over dic css */
+
+.game-over {
+   visibility: hidden; 
+  display: none;
+  position: relative;
+  /* transition: all 0.4 ease-in-out; */
+  animation: fadeIn 1.2s;
+}
+
+
+.css-class-text{
+  position: absolute;
+  color: antiquewhite;
+  font-size: 175px;
+  font-weight: 800;
+  top: 0.2em;
+  left: 2em;
+  animation: bounce 1.5s infinite;
+}
+
+
+.game-over img {
+  height: 100vh;
+  width: 100%;
+}
+
+.game-over-button {
+  position: absolute;
+  top: 15em;
+  left: 30em;
+  width: 12em;
+  height: 3em;
+  background: red;
+  color: aliceblue;
+  border: none;
+  font-size: 20px;
+  border-radius: 5em;
+  transition: all 0.3s ease-in-out;
+  animation:fadeIn 1.4s ;
+}
+
+.game-over-button:hover {
+  transform: scale(1.1);
+}
+
+.game-over-score {
+  position: absolute;
+  top: 12em;
+  left: 11em;
+  font-size: 45px;
+  animation: slideIn 1.2s;
+}
+
+.images-short{
+  width: 50px;
+  height: 50px;
+}
+
+ /* Animations */
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

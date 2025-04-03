@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock,paper,scessior game-2</title>
+  <link rel="stylesheet" href="rock-paper-scissors-game.css">
+</head>
+
+<body>
+  <div class="main">
+   
+    <div class="option ">
+      <img src="img/rock.jpg" onclick="playGame('rock')">
+      <img src="img/paper.jpg" onclick="playGame('paper')">
+      <img src="img/scissors.jpg" onclick="playGame('scissors')">
+    </div>
+
+    <div class="score-bord">
+      <div class="js-result css-class-result">😊Ready😊</div>
+      <div class="js-move css-class-move">
+        Computer Move
+         <img class="images-short" src="img/rock.jpg"> 
+         - 
+         <img class="images-short" src="img/paper.jpg">
+         User Move
+      </div>
+      <div class="js-scrore-bord css-class-score">win : 0 | lose : 0 | tie :0 </div>
+      
+    </div>
+
+    <div class="buttons">
+      <button class="js-reset-button css-class-reset" onclick="resetGame()">reset</button>
+      <button class="js-final css-class-final" onclick="showGameOver()">final score</button>
+    </div>
+  </div>  
+
+  <div class="game-over">
+    <p class="css-class-text">Game Over!</p>
+    <img src="img/over.png">
+    <button class="game-over-button" onclick="resetGame()">Reset</button>
+    <p class="game-over-score js-final-scrore"> win : 0 | lose : 0 | tie :0 </p>
+  </div>
+
+  <script src="rock-paper-scissors-game.js"></script>
+</body>
+
+</html>
